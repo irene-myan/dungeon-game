@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 9b433116887864c4a8fabbce1ccba389
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6578004938754234078
+    second: farmer_girl_base_walking_front_0
+  - first:
+      213: 2902568854339593865
+    second: farmer_girl_base_walking_front_1
+  - first:
+      213: -2009384962056325161
+    second: farmer_girl_base_2
+  - first:
+      213: 6058595027711301358
+    second: farmer_girl_base_walking_side_0
+  - first:
+      213: -3998879967251316876
+    second: farmer_girl_base_walking_side_1
+  - first:
+      213: -8015534056445945143
+    second: farmer_girl_base_walking_side_2
+  - first:
+      213: 1325042941241142205
+    second: farmer_girl_base_walking_back_0
+  - first:
+      213: -8198719400279254244
+    second: farmer_girl_base_walking_back_1
+  - first:
+      213: -4967832751868759545
+    second: farmer_girl_base_walking_back_2
+  - first:
+      213: 4471244612843153102
+    second: farmer_girl_base_arms_walking_0
+  - first:
+      213: 7639799991753653312
+    second: farmer_girl_base_arms_walking_1
+  - first:
+      213: 7448172006076193584
+    second: farmer_girl_base_arms_walking_2
+  - first:
+      213: -3136563826258867974
+    second: farmer_girl_base_arms_walking_side_0
+  - first:
+      213: 6824047552575692742
+    second: farmer_girl_base_arms_walking_side_1
+  - first:
+      213: 7685103135771806346
+    second: farmer_girl_base_arms_walking_side_2
+  - first:
+      213: -8372829359114635039
+    second: farmer_girl_base_arms_walking_back_0
+  - first:
+      213: -8055341514506639387
+    second: farmer_girl_base_arms_walking_back_1
+  - first:
+      213: -285234149802904606
+    second: farmer_girl_base_arms_walking_back_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_front_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 640
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229e9c62c5b36b4a0800000000000000
+      internalID: -6578004938754234078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_front_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 640
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986260b9efef74820800000000000000
+      internalID: 2902568854339593865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 640
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7fe9fe50b3d14e0800000000000000
+      internalID: -2009384962056325161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_side_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 608
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee61ea0f314741450800000000000000
+      internalID: 6058595027711301358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_side_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 608
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f3f845bdf1188c0800000000000000
+      internalID: -3998879967251316876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_side_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 608
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca5e786e3a13c090800000000000000
+      internalID: -8015534056445945143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_back_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 576
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb21d0e88f736210800000000000000
+      internalID: 1325042941241142205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_back_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 576
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b5045e42c483e80800000000000000
+      internalID: -8198719400279254244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_walking_back_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 576
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702bf41de66be0bb0800000000000000
+      internalID: -4967832751868759545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 647
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec62564294d0d0e30800000000000000
+      internalID: 4471244612843153102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 647
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c32877d95060a60800000000000000
+      internalID: 7639799991753653312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 647
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b1e283af83d5760800000000000000
+      internalID: 7448172006076193584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_side_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 615
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8008871dfa874d0800000000000000
+      internalID: -3136563826258867974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_side_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 615
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfd5adf713e3be50800000000000000
+      internalID: 6824047552575692742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_side_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 615
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a4be5a598f6aa60800000000000000
+      internalID: 7685103135771806346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_back_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 583
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8b20d1f0cbdcb80800000000000000
+      internalID: -8372829359114635039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_back_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 583
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7ef53529da53090800000000000000
+      internalID: -8055341514506639387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmer_girl_base_arms_walking_back_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 583
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3ff2f4d05aa0cf0800000000000000
+      internalID: -285234149802904606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
