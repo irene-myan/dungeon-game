@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Fighter
   layers:
   - Default
   - TransparentFX
@@ -49,6 +51,9 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 2859335793
+    locked: 0
+  - name: Weapon
+    uniqueID: 1201052113
     locked: 0
   - name: Over Actor
     uniqueID: 1828414365
