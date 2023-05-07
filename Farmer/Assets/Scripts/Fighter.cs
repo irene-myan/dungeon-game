@@ -22,6 +22,7 @@ public class Fighter : MonoBehaviour
             pushDir = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
             GameManager.instance.ShowText(dmg.dmgAmount.ToString(), 20, Color.red, transform.position, Vector3.up * 30, 0.5f);
+            GameManager.instance.charMenu.UpdateMenu();
             if (hitpoint <= 0)
             {
                 hitpoint = 0;

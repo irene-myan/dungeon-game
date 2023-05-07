@@ -29,6 +29,12 @@ public abstract class Character : Fighter
         else if (moveDelta.x < 0)
             transform.localScale = new Vector2(-1, 1);
 
+        // Push vector
+        moveDelta += pushDir;
+
+        // Reduce pushDir every frame, based off recovery speed
+        pushDir = Vector3.Lerp(pushDir, Vector3.zero, pushRecoverySpeed);
+
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y),
                                 Mathf.Abs(moveDelta.y * ySpeed * Time.deltaTime), LayerMask.GetMask("Character", "Blocking"));
         if (hit.collider == null)

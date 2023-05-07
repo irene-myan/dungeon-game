@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Enemy : Character
 {
+    // XP
     public int xpValue = 1;
 
-    public float triggerLength = 1;
-    public float chaseLength = 5;
+    // Logic
+    public float triggerLength = 0.5f;
+    public float chaseLength = 7;
     private bool chasing;
     private bool collidingWPlayer;
     private Transform playerTransform;
     private Vector3 startPos;
 
+    // Hitbox
     private BoxCollider2D hitbox;
     public ContactFilter2D filter;
     private Collider2D[] hits = new Collider2D[10];
@@ -76,5 +79,6 @@ public class Enemy : Character
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
         GameManager.instance.ShowText("+" + xpValue.ToString() + " XP", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+        GameManager.instance.charMenu.UpdateMenu();
     }
 }

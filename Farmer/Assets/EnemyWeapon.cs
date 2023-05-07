@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWeapon : MonoBehaviour
+public class EnemyWeapon : Collidable
 {
+    public int damagePoint;
+    public float pushForce;
     // Start is called before the first frame update
-    void Start()
+    protected override void OnCollide(Collider2D coll)
     {
-        
-    }
+        if (coll.tag == "Fighter" && coll.name == "Player")
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            Damage dmg = new Damage
+            {
+                dmgAmount = damagePoint,
+                origin = transform.position,
+                pushForce = pushForce
+            };
+
+            coll.SendMessage("RecieveDamage", dmg);
+        }
     }
 }
