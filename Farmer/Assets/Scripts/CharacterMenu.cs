@@ -34,6 +34,7 @@ public class CharacterMenu : MonoBehaviour
         }
 
         charSelectionSprite.sprite = GameManager.instance.playerSprites[curCharSelected];
+        GameManager.instance.player.SwapSprite(curCharSelected);
     }
 
     // Weapon upgrade
@@ -52,7 +53,7 @@ public class CharacterMenu : MonoBehaviour
         weaponSprite.sprite = GameManager.instance.weaponSprites[curWeaponLevel];
         if (curWeaponLevel == GameManager.instance.weaponPrices.Count - 1)
         {
-            upgradeCostText.text = "END";
+            upgradeCostText.text = "---";
         }
         else
         {
@@ -60,14 +61,13 @@ public class CharacterMenu : MonoBehaviour
         }
 
 
-        healthText.text = GameManager.instance.player.hitpoint.ToString();
-        healthBar.localScale = new Vector3(0.5f, 0, 0);
+        healthText.text = GameManager.instance.player.hitpoint.ToString() + "/" + GameManager.instance.GetMaxHealth().ToString();
+        healthBar.localScale = new Vector3((float)GameManager.instance.player.hitpoint / GameManager.instance.GetMaxHealth(), 1f, 0);
 
         coinsText.text = GameManager.instance.coins.ToString() + " coins";
 
-        levelText.text = "NA";
-        xpText.text = "NA";
-        xpBar.localScale = new Vector3(0.5f, 0, 0);
+        levelText.text = GameManager.instance.level.ToString();
+        xpText.text = GameManager.instance.experience.ToString() + "/" + GameManager.instance.xpTable[GameManager.instance.level - 1];
+        xpBar.localScale = new Vector3((float)GameManager.instance.experience / GameManager.instance.xpTable[GameManager.instance.level - 1], 1f, 0);
     }
-
 }

@@ -77,7 +77,7 @@ public class Enemy : Character
     protected override void Death()
     {
         Destroy(gameObject);
-        GameManager.instance.experience += xpValue;
+        GameManager.instance.AddXP(xpValue);
         GameManager.instance.ShowText("+" + xpValue.ToString() + " XP", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
         GameManager.instance.charMenu.UpdateMenu();
     }

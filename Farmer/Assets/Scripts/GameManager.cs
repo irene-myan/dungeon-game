@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     // Resources
     public List<Sprite> playerSprites;
+    public List<RuntimeAnimatorController> playerAnimators;
     public List<Sprite> weaponSprites;
     public List<int> weaponPrices;
     public int[] weapondDmg = { 1, 2, 3, 4, 6, 8 };
@@ -32,9 +33,9 @@ public class GameManager : MonoBehaviour
 
     public CharacterMenu charMenu;
 
-    // Logic
     public int coins;
     public int experience;
+    public int level;
 
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
@@ -57,23 +58,36 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    public void AddXP(int xp)
+    {
+        experience += xp;
+        // Level up
+        while (experience >= xpTable[level - 1])
+        {
+            if (level < xpTable.Count)
+            {
+                experience -= xpTable[level - 1];
+                ++level;
+                player.hitpoint = xpTable[level - 1] * 2;
+            }
+        }
+    }
 
-    /*
-        int preferedSkin
-        int coins
-        int experience
-        int weaponLevel
-    */
+    public int GetMaxHealth()
+    {
+        return xpTable[level - 1] * 2;
+    }
+
     public void SaveState()
     {
         string s = "";
-        s += "0" + "|"; // pref skin
+        s += player.selectedSkin.ToString() + "|";
         s += coins.ToString() + "|";
         s += experience.ToString() + "|";
-        s += weapon.weaponLevel.ToString(); // weapon level
+        s += level.ToString() + "|";
+        s += weapon.weaponLevel.ToString();
 
         PlayerPrefs.SetString("SaveState", s);
-        Debug.Log(s);
     }
 
     public void LoadState(Scene s, LoadSceneMode mode)
@@ -82,11 +96,14 @@ public class GameManager : MonoBehaviour
             return;
 
         string[] loading = PlayerPrefs.GetString("SaveState").Split('|');
-        Debug.Log(loading);
+        Debug.Log(PlayerPrefs.GetString("SaveState"));
 
-        // pref skin
+        player.SwapSprite(int.Parse(loading[0]));
         coins = int.Parse(loading[1]);
         experience = int.Parse(loading[2]);
-        weapon.SetWeaponLevel(int.Parse(loading[3]));
+        level = int.Parse(loading[3]);
+        weapon.SetWeaponLevel(int.Parse(loading[4]));
+
+        charMenu.UpdateMenu();
     }
 }

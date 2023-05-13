@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Player : Character
 {
+    private SpriteRenderer spriteRenderer;
+    public int selectedSkin = 0;
+
+    protected override void Start()
+    {
+        base.Start();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        hitpoint = GameManager.instance.GetMaxHealth();
+        GameManager.instance.charMenu.UpdateMenu();
+    }
 
     private void FixedUpdate()
     {
@@ -15,5 +25,17 @@ public class Player : Character
         animator.SetFloat("Speed", moveDelta.sqrMagnitude);
 
         UpdateMotor(moveDelta);
+    }
+
+    public void SwapSprite(int skinId)
+    {
+        selectedSkin = skinId;
+
+        if (!spriteRenderer)
+        {
+            Start();
+        }
+        spriteRenderer.sprite = GameManager.instance.playerSprites[skinId];
+        animator.runtimeAnimatorController = GameManager.instance.playerAnimators[skinId];
     }
 }
