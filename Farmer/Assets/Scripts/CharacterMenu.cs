@@ -7,11 +7,17 @@ public class CharacterMenu : MonoBehaviour
 {
     public Text levelText, healthText, coinsText, upgradeCostText, xpText;
 
-    private int curCharSelected = 0;
+    private int curCharSelected;
     public Image charSelectionSprite;
     public Image weaponSprite;
     public RectTransform xpBar;
     public RectTransform healthBar;
+
+    private void Start()
+    {
+        curCharSelected = GameManager.instance.player.selectedSkin;
+        charSelectionSprite.sprite = GameManager.instance.playerSprites[curCharSelected];
+    }
 
     // Character selection
     public void OnArrowClick(bool right)

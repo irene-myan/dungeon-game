@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     {
         if (GameManager.instance != null)
         {
+            Destroy(player.gameObject);
+            Destroy(ftManager.gameObject);
             Destroy(gameObject);
             return;
         }
@@ -104,6 +106,9 @@ public class GameManager : MonoBehaviour
         level = int.Parse(loading[3]);
         weapon.SetWeaponLevel(int.Parse(loading[4]));
 
+        player.transform.position = GameObject.Find("Spawn").transform.position;
+
+        charMenu = FindObjectOfType<CharacterMenu>();
         charMenu.UpdateMenu();
     }
 }

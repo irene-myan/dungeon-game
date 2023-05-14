@@ -13,6 +13,8 @@ public class Player : Character
         spriteRenderer = GetComponent<SpriteRenderer>();
         hitpoint = GameManager.instance.GetMaxHealth();
         GameManager.instance.charMenu.UpdateMenu();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void FixedUpdate()

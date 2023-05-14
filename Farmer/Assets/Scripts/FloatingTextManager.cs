@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class FloatingTextManager : MonoBehaviour
 {
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     public GameObject textContainer;
     public GameObject textPrefab;
 

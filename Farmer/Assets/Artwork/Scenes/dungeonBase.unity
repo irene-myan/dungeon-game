@@ -17716,6 +17716,7 @@ GameObject:
   - component: {fileID: 1358744308}
   - component: {fileID: 1358744307}
   - component: {fileID: 1358744310}
+  - component: {fileID: 1358744311}
   m_Layer: 9
   m_Name: Knight
   m_TagString: Fighter
@@ -17788,7 +17789,7 @@ SpriteRenderer:
   m_SortingLayerID: 1886786931
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba46244ddc9672f45b1b1e8b3b849e09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3993bbb517ed5074190b93a6da967f9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17830,6 +17831,8 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
+  xSpeed: 1
+  ySpeed: 0.8
   xpValue: 2
   triggerLength: 0.5
   chaseLength: 7
@@ -17847,6 +17850,25 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!95 &1358744311
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358744306}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20e257513fcaf104699186e70d573c21, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1388433588
 GameObject:
   m_ObjectHideFlags: 0
@@ -18499,6 +18521,8 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
+  xSpeed: 1
+  ySpeed: 0.8
   selectedSkin: 0
 --- !u!61 &1569898931
 BoxCollider2D:
@@ -18513,7 +18537,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0065585673, y: -0.07116152}
+  m_Offset: {x: -0.0012658834, y: -0.08848776}
   m_SpriteTilingProperty:
     border: {x: 0.08, y: 0, z: 0.089999996, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18524,7 +18548,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.102289855, y: 0.0887734}
+  m_Size: {x: 0.111224174, y: 0.12342587}
   m_EdgeRadius: 0
 --- !u!212 &1569898932
 SpriteRenderer:

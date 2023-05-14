@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraMotor : MonoBehaviour
 {
-    public Transform lookAt;
+    private Transform lookAt;
     public float boundX = 0.15f;
     public float boundY = 0.05f;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        lookAt = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
