@@ -6,8 +6,8 @@ public abstract class Character : Fighter
 {
     protected BoxCollider2D boxCollider;
     protected Animator animator;
-    protected float xSpeed = 1.0f;
-    protected float ySpeed = 0.8f;
+    public float xSpeed = 1.0f;
+    public float ySpeed = 0.8f;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
 

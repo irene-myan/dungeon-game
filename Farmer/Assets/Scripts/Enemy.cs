@@ -26,7 +26,8 @@ public class Enemy : Character
         playerTransform = GameManager.instance.player.transform;
 
         startPos = transform.position;
-        hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        hitbox = transform.GetComponent<BoxCollider2D>();
+        // hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
 
     private void FixedUpdate()
@@ -41,15 +42,18 @@ public class Enemy : Character
 
             if (chasing && !collidingWPlayer)
             {
+                animator.SetFloat("Speed", (playerTransform.position - transform.position).normalized.sqrMagnitude);
                 UpdateMotor((playerTransform.position - transform.position).normalized);
             }
             else if (!chasing)
             {
+                animator.SetFloat("Speed", 0f);
                 UpdateMotor(startPos - transform.position);
             }
         }
         else
         {
+            animator.SetFloat("Speed", 0f);
             UpdateMotor(startPos - transform.position);
             chasing = false;
         }
