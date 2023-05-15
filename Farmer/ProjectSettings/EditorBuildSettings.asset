@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/catRoom.unity
     guid: 4f54630f1672249489f9188a24559161
+  - enabled: 1
+    path: Assets/Scenes/dungeon2.unity
+    guid: 8912811e00be34748aa9e0657cc34c28
   m_configObjects: {}

@@ -13,7 +13,6 @@ public class Chick : Character
     public float moveSpeed = 0.1f;
     private bool moving = true;
 
-    // Update is called once per frame
     private void Update()
     {
         if (moving)
@@ -25,7 +24,6 @@ public class Chick : Character
 
     private IEnumerator ReachedWaypoint()
     {
-        // Wait for 2 seconds
         yield return new WaitForSeconds(2);
 
         // Increment waypoint index
@@ -48,7 +46,6 @@ public class Chick : Character
         moving = true;
     }
 
-    // Method that actually make Enemy walk
     private void Move()
     {
         if (waypointIndex < waypoints.Count)
@@ -63,27 +60,9 @@ public class Chick : Character
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
-                // WaitSub(30f);
                 moving = false;
                 animator.SetFloat("Speed", 0);
                 StartCoroutine(ReachedWaypoint());
-                // yield return new WaitForSeconds(2);
-                // waypointIndex += 1;
-                // if (waypointIndex == waypoints.Count)
-                // {
-                //     waypointIndex = 0;
-                // }
-                // // Swap sprite direction
-                // if (facingRight.Contains(waypointIndex))
-                // {
-                //     transform.localScale = Vector2.one;
-                // }
-                // else
-                // {
-                //     transform.localScale = new Vector2(-1, 1);
-                // }
-
-
             }
         }
     }
@@ -91,6 +70,5 @@ public class Chick : Character
     {
         base.Start();
         transform.position = waypoints[waypointIndex].transform.position;
-        // StartCoroutine(Move());
     }
 }
