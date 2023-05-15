@@ -24,6 +24,7 @@ public class Collidable : MonoBehaviour
         {
             if (hits[i] == null)
             {
+                OnSeperate();
                 continue;
             }
 
@@ -34,6 +35,11 @@ public class Collidable : MonoBehaviour
     }
 
     protected virtual void OnCollide(Collider2D coll)
+    {
+
+    }
+
+    protected virtual void OnSeperate()
     {
 
     }

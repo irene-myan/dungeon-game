@@ -49,4 +49,11 @@ public class Player : Character
         GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 20, Color.green, transform.position, Vector3.up * 50, 1.2f);
         GameManager.instance.charMenu.UpdateMenu();
     }
+
+    protected override void Death()
+    {
+        base.Death();
+        GameManager.instance.SaveState();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("bedroom");
+    }
 }
