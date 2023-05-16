@@ -51,9 +51,9 @@ public class GameManager : MonoBehaviour
         {
             return false;
         }
-        else if (coins >= weaponPrices[weapon.weaponLevel])
+        else if (coins >= weaponPrices[weapon.weaponLevel + 1])
         {
-            coins -= weaponPrices[weapon.weaponLevel];
+            coins -= weaponPrices[weapon.weaponLevel + 1];
             weapon.UpgradeWeapon();
             return true;
         }
@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
                 experience -= xpTable[level - 1];
                 ++level;
                 player.hitpoint = xpTable[level - 1] * 2;
+                player.maxHitpoint = player.hitpoint;
             }
         }
     }
@@ -98,7 +99,6 @@ public class GameManager : MonoBehaviour
             return;
 
         string[] loading = PlayerPrefs.GetString("SaveState").Split('|');
-        Debug.Log(PlayerPrefs.GetString("SaveState"));
 
         player.SwapSprite(int.Parse(loading[0]));
         coins = int.Parse(loading[1]);

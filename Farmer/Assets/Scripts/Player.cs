@@ -12,6 +12,7 @@ public class Player : Character
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         hitpoint = GameManager.instance.GetMaxHealth();
+        maxHitpoint = hitpoint;
         GameManager.instance.charMenu.UpdateMenu();
 
         DontDestroyOnLoad(gameObject);
@@ -53,7 +54,13 @@ public class Player : Character
     protected override void Death()
     {
         base.Death();
-        GameManager.instance.SaveState();
         UnityEngine.SceneManagement.SceneManager.LoadScene("bedroom");
+        GameManager.instance.coins = 0;
+        GameManager.instance.level = 1;
+        GameManager.instance.experience = 0;
+        GameManager.instance.weapon.weaponLevel = 0;
+        hitpoint = GameManager.instance.GetMaxHealth();
+        maxHitpoint = hitpoint;
+        GameManager.instance.SaveState();
     }
 }

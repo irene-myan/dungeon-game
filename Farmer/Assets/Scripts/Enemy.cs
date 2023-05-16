@@ -27,7 +27,6 @@ public class Enemy : Character
 
         startPos = transform.position;
         hitbox = transform.GetComponent<BoxCollider2D>();
-        // hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
 
     private void FixedUpdate()

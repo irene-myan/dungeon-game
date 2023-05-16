@@ -11,11 +11,15 @@ public abstract class Character : Fighter
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
 
+    private Vector2 scale;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        scale.x = Mathf.Abs(transform.localScale.x);
+        scale.y = transform.localScale.y;
     }
 
 
@@ -25,9 +29,9 @@ public abstract class Character : Fighter
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
         // Swap sprite direction
         if (moveDelta.x > 0)
-            transform.localScale = Vector2.one;
+            transform.localScale = new Vector2(scale.x, scale.y);
         else if (moveDelta.x < 0)
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-scale.x, scale.y);
 
         // Push vector
         moveDelta += pushDir;
